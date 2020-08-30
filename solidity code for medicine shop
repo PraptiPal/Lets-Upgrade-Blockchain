@@ -1,0 +1,26 @@
+pragma solidity  0.4.18 <= 0.6.12;
+ 
+
+
+contract details
+{
+    string custnm;
+    string medicinename;
+    int expiryyear;
+    int expirymonth;
+
+    
+    function details(string newcustnm, string newmedicinename,int newexpiryyear, int newexpirymonth)  public
+    {
+    custnm= newcustnm;
+    medicinename=newmedicinename;
+    expiryyear=newexpiryyear;
+    expirymonth=newexpirymonth;
+        
+    }
+    
+    function details() public view returns(string,string,int,int)
+    {
+        return(custnm,medicinename,expiryyear,expirymonth);
+    }
+}
