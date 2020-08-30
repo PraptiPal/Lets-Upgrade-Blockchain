@@ -1,0 +1,28 @@
+pragma solidity  0.4.18 <= 0.6.12;
+ 
+
+
+contract marks
+{
+    int markmath;
+    int markeng;
+    int markhin;
+    int marksci;
+    int markcomp;
+
+    
+    function marks(int newmarkmath, int newmarkeng, int newmarkhin, int newmarksci, int newmarkcomp)  public
+    {
+     markmath; newmarkmath;
+     markeng;  newmarkeng;
+     markhin;newmarkhin;
+     marksci;newmarksci;
+    markcomp=newmarkcomp;
+        
+    }
+    
+    function getmarks() public view returns(int,int,int,int,int)
+    {
+        return( markmath,markeng, markhin,marksci,markcomp);
+    }
+}
